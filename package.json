@@ -1,0 +1,16 @@
+{
+  "name": "odontoprimeclinic-final",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev --host",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@fontsource/montserrat": "^5.0.18",
+    "astro": "^4.9.2"
+  }
+}

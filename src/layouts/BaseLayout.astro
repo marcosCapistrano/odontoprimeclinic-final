@@ -1,0 +1,31 @@
+---
+import "../styles/globals.css";
+import "@fontsource/montserrat";
+
+import Header from "../components/Header.astro";
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <script
+            src="https://kit.fontawesome.com/5bf1347c5d.js"
+            crossorigin="anonymous"></script>
+        <title>{title}</title>
+    </head>
+    <body>
+        <Header />
+        <main>
+            <slot />
+        </main>
+
+        <footer>
+            © 2024 OdontoPrime Clinic. Todos os direitos reservados.
+        </footer>
+    </body>
+</html>

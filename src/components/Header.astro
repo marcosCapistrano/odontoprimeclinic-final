@@ -1,0 +1,50 @@
+---
+import "../styles/globals.css";
+import "../styles/components/header.css";
+
+import { Image } from "astro:assets";
+
+import logo from "../assets/logo.svg";
+---
+
+<header class="bg-primary">
+    <div class="header container flex">
+        <div class="logo flex">
+            <Image
+                alt="Odonto Prime Clinic"
+                src={logo}
+                width={42}
+                height={42}
+            />
+            <span>Odonto Prime Clinic</span>
+        </div>
+
+        <button class="nav-toggle" aria-controls="navigation"></button>
+
+        <nav data-visible="false" class="bg-primary">
+            <ul class="navigation flex">
+                <li><a href="#" class="btn">HOME</a></li>
+                <li><a href="#" class="btn">TRATAMENTOS</a></li>
+                <li><a href="#" class="btn btn-featured">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+    const nav = document.querySelector(".header nav");
+    const navToggle = document.querySelector(".header .nav-toggle");
+
+    if (navToggle && nav) {
+        navToggle.addEventListener("click", () => {
+            const visiblity = nav.getAttribute("data-visible");
+            if (visiblity === "false") {
+                nav.setAttribute("data-visible", "true");
+                navToggle.setAttribute("aria-expanded", "true");
+            } else {
+                nav.setAttribute("data-visible", "false");
+                navToggle.setAttribute("aria-expanded", "false");
+            }
+        });
+    }
+</script>

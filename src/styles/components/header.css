@@ -1,0 +1,75 @@
+.header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    --gap: .75rem;
+    align-items: center;
+
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+header nav {
+    position: static;
+}
+
+.header .nav-toggle {
+    display: none;
+}
+
+.header .navigation {
+    --gap: 1rem;
+
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+@media (max-width: 50rem) {
+    .header .nav-toggle {
+        display: block;
+        z-index: 9999;
+        background: transparent;
+        background-image: url("../../assets/icons/list.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 1.5rem;
+        height: 1.5rem;
+        aspect-ratio: 1;
+        border: 0;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 2000;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .header nav {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        transform: translateX(100%);
+        transition: transform 500ms ease-in-out;
+    }
+
+    .header nav[data-visible="true"] {
+        transform: translateX(0%);
+    }
+}

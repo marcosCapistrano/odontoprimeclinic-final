@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import { Image } from "astro:assets";
+
+import heroImage from "../assets/images/hero.png";
+---
+
+<BaseLayout>
+	<section id="hero" class="bg-contrast">
+		<div class="container flex">
+			<div class="flex-1">
+				<Image src={heroImage} alt="Pessoa Sorrindo" />
+			</div>
+
+			<div class="flex-1 flex flex-column">
+				<h1 class="fs-700">
+					Ajudamos a Recuperar a Confiança no seu Sorriso
+				</h1>
+				<p class="fs-500">
+					A experiência de um plano de tratamento personalizado com
+					valores acessíveis.
+				</p>
+				<a href="" class="btn btn-light">Fale Conosco</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="hero" class="bg-contrast">
+		<div class="container flex">
+			<Image src={heroImage} alt="Pessoa Sorrindo" />
+
+			<div class="flex flex-column">
+				<h1>Ajudamos Você a Recuperar a Confiança no Seu Sorriso</h1>
+				<p>
+					A experiência de um plano de tratamento personalizado com
+					valores acessíveis.
+				</p>
+				<a href="" class="btn btn-light">Fale Conosco</a>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
