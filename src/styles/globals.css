@@ -56,7 +56,7 @@ a {
 }
 
 .fs-500 {
-    font-size: clamp(1.25rem, 1.162rem + 0.3756vi, 1.25rem);;
+    font-size: clamp(1rem, 0.912rem + 0.3756vi, 1.25rem);
 }
 
 section {
