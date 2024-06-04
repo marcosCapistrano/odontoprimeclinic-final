@@ -1,10 +1,14 @@
 ---
 import "../styles/globals.css";
 import "../styles/components/header.css";
+import { getCategories } from "../utils/treatments";
 
 import { Image } from "astro:assets";
 
 import logo from "../assets/logo.svg";
+
+const categories = await getCategories();
+console.log(categories);
 ---
 
 <header class="bg-primary">
@@ -24,7 +28,18 @@ import logo from "../assets/logo.svg";
         <nav data-visible="false" class="bg-primary">
             <ul class="navigation flex">
                 <li><a href="#" class="btn">HOME</a></li>
-                <li><a href="#" class="btn">TRATAMENTOS</a></li>
+                <li>
+                    <a href="#" class="btn menu">TRATAMENTOS</a>
+                    <ul class="submenu bg-primary">
+                        {
+                            Object.keys(categories).map((category) => (
+                                <li>
+                                    <a href={`/tratamentos/${categories[category].slug}`} class="menu">{category}</a>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </li>
                 <li><a href="#" class="btn btn-featured">Contato</a></li>
             </ul>
         </nav>

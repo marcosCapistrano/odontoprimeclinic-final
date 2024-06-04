@@ -40,6 +40,38 @@ header nav {
     text-transform: uppercase;
 }
 
+.menu {
+    position: relative;
+}
+
+li .submenu {
+    display: none;
+}
+
+li .submenu li .submenu {
+    display: none;
+}
+
+li:hover .submenu {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+    position: absolute;
+    top: 75%;
+}
+
+li:hover .submenu li:hover .submenu {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+    position: absolute;
+    left: -100%;
+    transform: translate(20%);
+    top: 0;
+}
+
 @media (max-width: 50rem) {
     .header .nav-toggle {
         display: block;

@@ -1,0 +1,42 @@
+---
+title: "Periodontia"
+category: "Tratamentos Gerais"
+description: "Saiba mais sobre periodontia, a especialidade que trata das doenças do tecido gengival e dos tecidos de suporte dos dentes, essencial para manter a saúde bucal e geral."
+---
+# Periodontia
+
+## O que é Periodontia?
+
+Periodontia é a especialidade odontológica que trata das doenças e condições que afetam os tecidos de suporte dos dentes, ou seja, gengivas, ligamento periodontal, cemento e osso alveolar. Os tratamentos periodontais são essenciais para manter a saúde bucal e prevenir a perda dentária.
+
+## Problemas Comuns Tratados pela Periodontia
+
+- **Gengivite:** Inflamação das gengivas causada principalmente por acúmulo de placa bacteriana. Se não tratada, pode progredir para periodontite.
+- **Periodontite:** Inflamação mais grave que afeta também os tecidos de suporte do dente. Pode levar à perda óssea e, eventualmente, à perda dos dentes.
+- **Recessão Gengival:** Retração das gengivas que expõe mais do dente ou da raiz. Pode causar sensibilidade dentária e problemas estéticos.
+- **Doença Periodontal e Saúde Geral:** Estudos mostram que a doença periodontal pode estar associada a condições de saúde sistêmica, como doenças cardíacas e diabetes.
+
+## Tratamentos Oferecidos em Periodontia
+
+- **Limpeza Profissional e Raspagem:** Remoção de placa e tártaro acima e abaixo da linha da gengiva.
+- **Alisamento Radicular:** Suavização das raízes dos dentes para evitar a acumulação de bactérias.
+- **Cirurgia Periodontal:** Quando necessário, procedimentos cirúrgicos podem ser realizados para restaurar tecidos danificados ou para acessar áreas abaixo da gengiva que não podem ser tratadas com procedimentos não cirúrgicos.
+- **Enxertos Gengivais:** Utilizados para corrigir a recessão gengival e proteger as raízes dos dentes.
+
+## Benefícios do Tratamento Periodontal
+
+- **Prevenção de Perda Dentária:** Tratar a doença periodontal é fundamental para evitar a perda de dentes.
+- **Melhoria da Saúde Bucal e Geral:** A saúde periodontal é intrinsecamente ligada à saúde geral, e seu tratamento pode melhorar seu bem-estar geral.
+- **Estética Melhorada:** Tratamentos como enxertos gengivais podem melhorar a aparência das gengivas e do sorriso.
+
+## Cuidados Após o Tratamento Periodontal
+
+- **Higiene Oral Rigorosa:** É essencial manter uma rotina de higiene oral consistente para evitar a recorrência de problemas periodontais.
+- **Visitas Regulares ao Dentista:** Check-ups e limpezas profissionais regulares são fundamentais para manter a saúde periodontal.
+- **Adoção de um Estilo de Vida Saudável:** Não fumar e manter uma dieta equilibrada ajudam na saúde das gengivas e no sucesso a longo prazo dos tratamentos.
+
+## Conclusão
+
+A saúde das gengivas é tão importante quanto a saúde dos dentes. Se você está enfrentando sintomas como gengivas sangrantes, sensibilidade ou retração, consulte um especialista em periodontia. A intervenção precoce pode salvar seus dentes e melhorar sua saúde geral.
+
+Para mais informações ou para marcar uma consulta, entre em contato conosco!

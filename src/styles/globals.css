@@ -55,8 +55,20 @@ a {
     font-family: 'Montserrat';
 }
 
+.font-bold {
+    font-weight: 700;
+}
+
+.font-accent {
+    color: var(--bg-accent);
+}
+
 .fs-700 {
     font-size: clamp(2.25rem, 1.7218rem + 2.2535vi, 3.75rem);
+}
+
+.fs-600 {
+    font-size: clamp(2rem, 1.8239rem + 0.7512vi, 2.5rem);
 }
 
 .fs-500 {
@@ -95,15 +107,17 @@ section {
     color: var(--color-contrast);
 }
 
+
 .btn {
     border-radius: .25rem;
     transition: box-shadow 0.2s ease-in-out;
 
-    padding-inline: 2em;
+    padding-inline: 1.5em;
     padding-bottom: .75em;
     padding-top: .75em;
 
     width: max-content;
+    font-weight: 700;
 }
 
 .btn-featured {
@@ -114,6 +128,7 @@ section {
 .btn-light {
     background-color: var(--bg-primary);
     color: var(--color-primary);
+    border: 1px solid var(--color-primary);
 }
 
 .btn-featured:hover {
@@ -139,4 +154,15 @@ section {
     color: var(--color-secondary);
     padding: 1rem;
     border-radius: 2px;
+}
+
+.card-btn {
+    transition: box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    box-shadow: 4px 4px 0 0 #d0d0d0;
+    z-index: 2;
+    transform: translate(-400, -4px);
 }
