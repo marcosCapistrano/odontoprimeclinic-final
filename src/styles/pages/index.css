@@ -1,0 +1,9 @@
+#treatments .section-header {
+    grid-column: span 2;
+}
+
+@media (max-width: 50rem) {
+    #treatments .section-header {
+        grid-column: span 1;
+    }
+}

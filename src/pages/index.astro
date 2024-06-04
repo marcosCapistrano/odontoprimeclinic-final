@@ -1,27 +1,198 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-
+import "../styles/pages/index.css";
 import { Image } from "astro:assets";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 import heroImage from "../assets/images/hero.png";
 ---
 
 <BaseLayout>
 	<section id="hero" class="bg-contrast">
-		<div class="container flex">
-			<div class="flex-1">
+		<div class="container grid grid-cols-2">
+			<div>
 				<Image src={heroImage} alt="Pessoa Sorrindo" />
 			</div>
 
-			<div class="flex-1 flex flex-column">
-				<h1 class="fs-700">
-					Ajudamos a Recuperar a Confiança no seu Sorriso
-				</h1>
-				<p class="fs-500">
-					A experiência de um plano de tratamento personalizado com
-					valores acessíveis.
-				</p>
+			<div class="flex flex-col">
+				<div class="title-subtitle">
+					<h1 class="fs-700">
+						Ajudamos a Recuperar a Confiança no seu Sorriso
+					</h1>
+					<p class="fs-500">
+						A experiência de um plano de tratamento personalizado
+						com valores acessíveis.
+					</p>
+				</div>
 				<a href="" class="btn btn-light">Fale Conosco</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="clinic" class="bg-primary">
+		<div class="container grid grid-cols-2">
+			<div class="flex flex-col">
+				<div class="title-subtitle">
+					<div>
+						<span>Sobre</span>
+						<h2>Clínica Odonto Prime</h2>
+					</div>
+					<p>
+						Localizada na cidade de Porto Alegre a Dermakey é uma
+						clínica de estética avançada que oferece protocolos
+						exclusivos para harmonização facial e corporal. A
+						Clínica Dermakey é referência na técnica de
+						otomodelação, procedimento que permite corrigir orelhas
+						de abano sem cirurgia.
+					</p>
+				</div>
+
+				<ul class="grid grid-cols-2">
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="">Title</span>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Phasellus id accumsan nisl.
+								Nunc hendrerit ultrices erat non mollis. Proin
+								sed metus et neque finibus volutpat et eget
+								nibh. Donec pellentesque tincidunt pretium.
+								Nullam molestie purus suscipit.
+							</p>
+						</div>
+					</li>
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="card-title">Title</span>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Phasellus id accumsan nisl.
+								Nunc hendrerit ultrices erat non mollis. Proin
+								sed metus et neque finibus volutpat et eget
+								nibh. Donec pellentesque tincidunt pretium.
+								Nullam molestie purus suscipit.
+							</p>
+						</div>
+					</li>
+
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="card-title">Title</span>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Phasellus id accumsan nisl.
+								Nunc hendrerit ultrices erat non mollis. Proin
+								sed metus et neque finibus volutpat et eget
+								nibh. Donec pellentesque tincidunt pretium.
+								Nullam molestie purus suscipit.
+							</p>
+						</div>
+					</li>
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="card-title">Title</span>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Phasellus id accumsan nisl.
+								Nunc hendrerit ultrices erat non mollis. Proin
+								sed metus et neque finibus volutpat et eget
+								nibh. Donec pellentesque tincidunt pretium.
+								Nullam molestie purus suscipit.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="grid-image">
+				<Image src={heroImage} alt="Pessoa Sorrindo" />
+			</div>
+		</div>
+	</section>
+
+	<section id="treatments" class="bg-primary">
+		<div class="container grid grid-cols-4">
+			<div class="flex flex-col section-header">
+				<div class="title-subtitle">
+					<div>
+						<span>Sobre</span>
+						<h2>Tratamentos</h2>
+					</div>
+					<p>
+						Nosso grande diferencial no mercado é oferecer planos de
+						tratamento personalizados com valores justos. Estes são
+						alguns dos destaques.
+					</p>
+				</div>
+
+				<div class="flex flex-col">
+					<a href="" class="btn btn-featured">Avaliação Gratuita</a>
+					<a href="" class="btn">Todos os Tratamentos</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="title-subtitle">
+					<span class="card-title">Title</span>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Phasellus id accumsan nisl. Nunc hendrerit ultrices erat
+						non mollis. Proin sed metus et neque finibus volutpat et
+						eget nibh. Donec pellentesque tincidunt pretium. Nullam
+						molestie purus suscipit.
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="title-subtitle">
+					<span class="card-title">Title</span>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Phasellus id accumsan nisl. Nunc hendrerit ultrices erat
+						non mollis. Proin sed metus et neque finibus volutpat et
+						eget nibh. Donec pellentesque tincidunt pretium. Nullam
+						molestie purus suscipit.
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="title-subtitle">
+					<span class="card-title">Title</span>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Phasellus id accumsan nisl. Nunc hendrerit ultrices erat
+						non mollis. Proin sed metus et neque finibus volutpat et
+						eget nibh. Donec pellentesque tincidunt pretium. Nullam
+						molestie purus suscipit.
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="title-subtitle">
+					<span class="card-title">Title</span>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Phasellus id accumsan nisl. Nunc hendrerit ultrices erat
+						non mollis. Proin sed metus et neque finibus volutpat et
+						eget nibh. Donec pellentesque tincidunt pretium. Nullam
+						molestie purus suscipit.
+					</p>
+				</div>
+			</div>
+
+			<div class="card flex flex-col">
+				<Image src={heroImage} alt="Pessoa Sorrindo" />
+				<div class="title-subtitle">
+					<span class="card-title">Title</span>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Phasellus id accumsan nisl. Nunc hendrerit ultrices erat
+						non mollis. Proin sed metus et neque finibus volutpat et
+						eget nibh. Donec pellentesque tincidunt pretium. Nullam
+						molestie purus suscipit.
+					</p>
+				</div>
 			</div>
 		</div>
 	</section>
