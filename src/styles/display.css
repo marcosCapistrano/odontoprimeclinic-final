@@ -20,6 +20,11 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
+.grid-cols-2 > *,
+.grid-cols-4 > * {
+    grid-column: span 1;
+}
+
 @media (max-width: 50rem) {
     .grid-cols-2 {
         grid-template-columns: 1fr;

@@ -1,7 +1,10 @@
 ---
 title: "Harmonização Facial"
+image: "./images/hero.png"
 category: "Estética"
 description: "Realce sua beleza natural com procedimentos de harmonização facial, que ajustam a simetria e proporcionalidade do rosto através de técnicas não cirúrgicas e minimamente invasivas."
+categoryDescription: "Conheça os tratamentos da área estética"
+featured: false
 ---
 
 # Harmonização Facial

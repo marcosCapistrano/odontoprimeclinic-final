@@ -3,9 +3,13 @@ import { z, defineCollection } from "astro:content";
 // Define a `type` and `schema` for each collection
 const treatmentsCollection = defineCollection({
     type: 'content',
-    schema: z.object({
+    schema: ({image}) => z.object({
         title: z.string(),
+        image: image().refine((img) => img.width >= 200, {
+            message: "Cover image must be at least 1080 pixels wide!",
+        }),
         category: z.string(),
+        categoryDescription: z.string(),
         description: z.string(),
         featured: z.boolean(),
     })

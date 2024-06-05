@@ -1,0 +1,27 @@
+---
+import TreatmentsLayout from "../../../layouts/TreatmentsLayout.astro";
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import { convertToSlug } from "../../../utils/treatments";
+
+export async function getStaticPaths() {
+    const treatments = await getCollection("treatments");
+    return treatments.map((treatment) => ({
+        params: {
+            slug: convertToSlug(treatment.data.category) + "/" + treatment.slug,
+        },
+        props: { treatment },
+    }));
+}
+
+const { treatment } = Astro.props;
+const { Content } = await treatment.render();
+---
+
+<TreatmentsLayout
+    title="Tratamentos - OdontoPrimeClinic"
+    headerTitle={treatment.data.title}
+    headerDescription={treatment.data.description}
+>
+    <Content />
+</TreatmentsLayout>

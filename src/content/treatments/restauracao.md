@@ -1,7 +1,10 @@
 ---
 title: "Restauração"
+image: "./images/hero.png"
 category: "Tratamentos Gerais"
+categoryDescription: "Conheça os tratamentos da área estética"
 description: "Explore os benefícios dos diferentes tipos de restaurações dentárias, que ajudam a recuperar a forma, função e estética dos dentes danificados por cárie ou trauma."
+featured: false
 ---
 
 # Restauração Dentária

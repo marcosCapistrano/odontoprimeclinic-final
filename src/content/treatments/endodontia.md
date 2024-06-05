@@ -1,7 +1,10 @@
 ---
 title: "Endodontia"
+image: "./images/hero.png"
 category: "Procedimentos Cirúrgicos"
+categoryDescription: "Conheça os tratamentos da área estética"
 description: "Descubra como a endodontia pode salvar seus dentes através de tratamentos de canal que tratam infecções profundas, eliminando a dor e restaurando a saúde dos dentes."
+featured: false
 ---
 
 # Endodontia

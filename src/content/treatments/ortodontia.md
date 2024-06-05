@@ -1,7 +1,10 @@
 ---
 title: "Ortodontia"
+image: "./images/hero.png"
 category: "Tratamentos Gerais"
+categoryDescription: "Conheça os tratamentos da área estética"
 description: "Descubra as opções de aparelhos ortodônticos convencionais e estéticos que corrigem desalinhamentos e melhoram a funcionalidade e estética do seu sorriso."
+featured: false
 ---
 
 # Ortodontia: Aparelhos Convencionais e Estéticos

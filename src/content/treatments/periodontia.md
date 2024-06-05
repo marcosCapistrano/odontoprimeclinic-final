@@ -1,7 +1,10 @@
 ---
 title: "Periodontia"
+image: "./images/hero.png"
 category: "Tratamentos Gerais"
+categoryDescription: "Conheça os tratamentos da área estética"
 description: "Saiba mais sobre periodontia, a especialidade que trata das doenças do tecido gengival e dos tecidos de suporte dos dentes, essencial para manter a saúde bucal e geral."
+featured: false
 ---
 # Periodontia
 

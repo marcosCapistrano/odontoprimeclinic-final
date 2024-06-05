@@ -1,7 +1,10 @@
 ---
 title: "Botox"
+image: "./images/hero.png"
 category: "Estética"
+categoryDescription: "Conheça os tratamentos da área estética"
 description: "Conheça os benefícios do Botox na odontologia, desde a melhoria estética ao redor da boca até o tratamento de condições funcionais como bruxismo e DTM, promovendo um sorriso mais saudável e jovem."
+featured: false
 ---
 # Tratamento com Botox
 

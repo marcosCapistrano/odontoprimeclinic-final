@@ -1,7 +1,10 @@
 ---
 title: "Clareamento e Faceta"
+image: "./images/hero.png"
 category: "Estética"
+categoryDescription: "Conheça os tratamentos da área estética"
 description: "Aprimore seu sorriso com tratamentos estéticos como clareamento dental e facetas, que oferecem soluções personalizadas para um sorriso mais brilhante e alinhado."
+featured: false
 ---
 # Clareamento e Facetas Dentárias
 

@@ -1,0 +1,32 @@
+---
+import "../styles/layouts/treatments.css";
+
+import BaseLayout from "./BaseLayout.astro";
+import { Image } from "astro:assets";
+import exteriorImg from "../assets/images/hero.png";
+
+const { title, headerTitle, headerDescription } = Astro.props;
+---
+
+<BaseLayout title={title}>
+	<div id="treatment-layout">
+		<div
+			class="layout-header"
+			style={`background-image: url(${exteriorImg.src})`}
+		>
+		</div>
+
+		<div class="bg-contrast">
+			<div class="container">
+				<div class="title-subtitle">
+					<h1 class="fs-700">{headerTitle}</h1>
+					<p>{headerDescription}</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<slot />
+		</div>
+	</div>
+</BaseLayout>

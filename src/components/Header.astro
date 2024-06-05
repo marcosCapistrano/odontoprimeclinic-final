@@ -8,7 +8,6 @@ import { Image } from "astro:assets";
 import logo from "../assets/logo.svg";
 
 const categories = await getCategories();
-console.log(categories);
 ---
 
 <header class="bg-primary">
@@ -27,14 +26,14 @@ console.log(categories);
 
         <nav data-visible="false" class="bg-primary">
             <ul class="navigation flex">
-                <li><a href="#" class="btn">HOME</a></li>
+                <li><a href="/" class="btn">HOME</a></li>
                 <li>
-                    <a href="#" class="btn menu">TRATAMENTOS</a>
+                    <a href="/tratamentos" class="btn menu">TRATAMENTOS</a>
                     <ul class="submenu bg-primary">
                         {
                             Object.keys(categories).map((category) => (
                                 <li>
-                                    <a href={`/tratamentos/${categories[category].slug}`} class="menu">{category}</a>
+                                    <a href={`/tratamentos/${category}`} class="menu">{categories[category].title}</a>
                                 </li>
                             ))
                         }

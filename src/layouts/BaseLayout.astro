@@ -1,6 +1,6 @@
 ---
-import "../styles/globals.css";
 import "../styles/display.css";
+import "../styles/globals.css";
 import "@fontsource/montserrat";
 
 import Header from "../components/Header.astro";
@@ -21,6 +21,7 @@ const { title } = Astro.props;
     </head>
     <body>
         <Header />
+        
         <main>
             <slot />
         </main>

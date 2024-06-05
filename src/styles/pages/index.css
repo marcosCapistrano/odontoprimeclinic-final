@@ -3,6 +3,9 @@
 }
 
 @media (max-width: 50rem) {
+    #hero .hero-image {
+        aspect-ratio: 16/9;
+    }
     #treatments .section-header {
         grid-column: span 1;
     }

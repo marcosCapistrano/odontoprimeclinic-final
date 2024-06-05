@@ -9,8 +9,7 @@ import heroImage from "../assets/images/hero.png";
 <BaseLayout>
 	<section id="hero" class="bg-contrast">
 		<div class="container grid grid-cols-2">
-			<div>
-				<Image src={heroImage} alt="Pessoa Sorrindo" />
+			<div class="hero-image" style=`background-image: url(${heroImage.src}); background-size:cover; background-repeat: no-repeat; background-position:center;`>
 			</div>
 
 			<div class="flex flex-col">

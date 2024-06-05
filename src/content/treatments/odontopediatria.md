@@ -1,7 +1,10 @@
 ---
 title: "Odontopediatria"
+image: "./images/hero.png"
 category: "Tratamentos Gerais"
+categoryDescription: "Conheça os tratamentos da área estética"
 description: "Entenda a importância da odontopediatria para a saúde bucal das crianças, desde o nascimento até a adolescência, com tratamentos especializados que cuidam do sorriso dos pequenos."
+featured: false
 ---
 
 # Odontopediatria

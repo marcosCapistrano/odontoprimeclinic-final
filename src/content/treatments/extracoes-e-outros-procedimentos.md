@@ -1,7 +1,10 @@
 ---
 title: "Extrações"
+image: "./images/hero.png"
 category: "Procedimentos Cirúrgicos"
+categoryDescription: "Conheça os tratamentos da área estética"
 description: "Saiba mais sobre as extrações dentárias e outros procedimentos cirúrgicos que ajudam a resolver problemas complexos e melhorar a saúde oral, garantindo uma recuperação eficaz e confortável."
+featured: false
 ---
 
 # Extrações e Demais Procedimentos Cirúrgicos Dentários

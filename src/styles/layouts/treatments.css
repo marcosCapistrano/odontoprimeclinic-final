@@ -1,0 +1,17 @@
+#treatment-layout .layout-header {
+    aspect-ratio: 16/4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#treatment-layout .title-subtitle {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    max-width: 80ch;
+}
+
+#treatment-layout .treatment-grid {
+    padding-top: 2rem;
+}

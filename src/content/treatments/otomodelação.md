@@ -1,7 +1,10 @@
 ---
 title: "Otomodelação"
+image: "./images/hero.png"
 category: "Estética"
+categoryDescription: "Conheça os tratamentos da área estética"
 description: "Aprenda sobre otomodelação, um procedimento estético que melhora a estética das orelhas sem a necessidade de cirurgia, oferecendo uma solução eficaz para 'orelhas de abano'."
+featured: false
 ---
 # Otomodelação
 

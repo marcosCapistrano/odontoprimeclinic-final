@@ -1,7 +1,10 @@
 ---
 title: "Clínico Geral Dentista"
+image: "./images/hero.png"
 category: "Tratamentos Gerais"
+categoryDescription: "Conheça os tratamentos da área estética"
 description: "Conheça os serviços oferecidos por um clínico geral dentário, responsável pelo cuidado integral da saúde bucal, tratando desde problemas simples até complexos, para pacientes de todas as idades."
+featured: false
 ---
 
 # Clínico Geral Dentário

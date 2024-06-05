@@ -1,8 +1,11 @@
 ---
 title: "Implantes e Próteses"
+image: "./images/hero.png"
 category: "Procedimentos Cirúrgicos"
+categoryDescription: "Conheça os tratamentos da área estética"
 description: "Descubra como os implantes e próteses dentárias podem restaurar a funcionalidade e a estética do seu sorriso, oferecendo soluções duradouras para dentes perdidos ou danificados."
 
+featured: false
 ---
 
 # Implantes e Próteses Dentárias

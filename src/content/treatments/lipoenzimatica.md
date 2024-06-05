@@ -1,7 +1,10 @@
 ---
 title: "Lipoenzimática"
+image: "./images/hero.png"
 category: "Estética"
+categoryDescription: "Conheça os tratamentos da área estética"
 description: "Explore o tratamento de lipoenzimática para a redução de gordura localizada, uma alternativa não cirúrgica que modela e contorna o corpo com resultados impressionantes."
+featured: false
 ---
 
 # Lipoenzimática
