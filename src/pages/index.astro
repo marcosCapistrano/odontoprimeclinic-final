@@ -4,12 +4,23 @@ import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 import heroImage from "../assets/images/hero.png";
+
+import { getCollection } from "astro:content";
+import { convertToSlug } from "../utils/treatments";
+
+const treatmeants = await getCollection("treatments");
+const featuredTreatments = treatmeants.filter(
+	(treatment) => treatment.data.featured === true,
+);
 ---
 
 <BaseLayout>
 	<section id="hero" class="bg-contrast">
 		<div class="container grid grid-cols-2">
-			<div class="hero-image" style=`background-image: url(${heroImage.src}); background-size:cover; background-repeat: no-repeat; background-position:center;`>
+			<div
+				class="hero-image"
+				style=`background-image: url(${heroImage.src}); background-size:cover; background-repeat: no-repeat; background-position:center;`
+			>
 			</div>
 
 			<div class="flex flex-col">
@@ -122,64 +133,34 @@ import heroImage from "../assets/images/hero.png";
 					</p>
 				</div>
 
-				<div class="flex flex-col">
+				<div class="flex flex-col treatments-btns">
 					<a href="" class="btn btn-featured">Avaliação Gratuita</a>
 					<a href="" class="btn btn-light">Todos os Tratamentos</a>
 				</div>
 			</div>
 
-			<a class="card card-btn">
-				<div class="title-subtitle">
-					<span class="font-bold">Title</span>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Phasellus id accumsan nisl. Nunc hendrerit ultrices erat
-						non mollis. Proin sed metus et neque finibus volutpat et
-						eget nibh. Donec pellentesque tincidunt pretium. Nullam
-						molestie purus suscipit.
-					</p>
-				</div>
-			</a>
+			{
+				featuredTreatments.map((treatment) => (
+					<a
+						class="card card-btn flex flex-col"
+						href={`/tratamentos/${convertToSlug(treatment.data.category)}/${treatment.slug}`}
+					>
+						<Image
+							src={treatment.data.image.src}
+							alt="Pessoa Sorrindo"
+							width={treatment.data.image.width}
+							height={treatment.data.image.height}
+						/>
+						<div class="title-subtitle">
+							<span class="font-bold">
+								{treatment.data.title}
+							</span>
+							<p>{treatment.data.description}</p>
+						</div>
+					</a>
+				))
+			}
 
-			<a class="card card-btn">
-				<div class="title-subtitle">
-					<span class="font-bold">Title</span>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Phasellus id accumsan nisl. Nunc hendrerit ultrices erat
-						non mollis. Proin sed metus et neque finibus volutpat et
-						eget nibh. Donec pellentesque tincidunt pretium. Nullam
-						molestie purus suscipit.
-					</p>
-				</div>
-			</a>
-
-			<a class="card card-btn">
-				<div class="title-subtitle">
-					<span class="font-bold">Title</span>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Phasellus id accumsan nisl. Nunc hendrerit ultrices erat
-						non mollis. Proin sed metus et neque finibus volutpat et
-						eget nibh. Donec pellentesque tincidunt pretium. Nullam
-						molestie purus suscipit.
-					</p>
-				</div>
-			</a>
-
-			<a class="card card-btn flex flex-col">
-				<Image src={heroImage} alt="Pessoa Sorrindo" />
-				<div class="title-subtitle">
-					<span class="font-bold">Title</span>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Phasellus id accumsan nisl. Nunc hendrerit ultrices erat
-						non mollis. Proin sed metus et neque finibus volutpat et
-						eget nibh. Donec pellentesque tincidunt pretium. Nullam
-						molestie purus suscipit.
-					</p>
-				</div>
-			</a>
 		</div>
 	</section>
 </BaseLayout>

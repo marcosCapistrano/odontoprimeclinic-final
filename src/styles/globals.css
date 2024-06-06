@@ -42,13 +42,13 @@ a {
 }
 
 :root {
-    --bg-primary: #F7F8FA;
-    --bg-secondary: #EFF3F6;
-    --bg-contrast: #191919;
-    --bg-accent: #A07400;
+    --bg-primary: #14315c;
+    --bg-secondary: #060d1a;
+    --bg-contrast: #0b1a32;
+    --bg-accent: #b88a20;
 
-    --color-primary: #000000;
-    --color-secondary: #000000;
+    --color-primary: #FFFFFF;
+    --color-secondary: #FFFFFF;
     --color-contrast: #FFFFFF;
     --color-accent: #FFFFFF;
 

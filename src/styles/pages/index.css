@@ -2,6 +2,10 @@
     grid-column: span 2;
 }
 
+#treatments .treatments-btns {
+    gap: .5rem;
+}
+
 @media (max-width: 50rem) {
     #hero .hero-image {
         aspect-ratio: 16/9;

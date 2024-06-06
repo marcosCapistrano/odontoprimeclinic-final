@@ -13,6 +13,8 @@
     font-size: 1.25rem;
     font-weight: 600;
     text-transform: uppercase;
+
+    color: var(--color-primary);
 }
 
 .header .logo img {
