@@ -146,10 +146,8 @@ const featuredTreatments = treatmeants.filter(
 						href={`/tratamentos/${convertToSlug(treatment.data.category)}/${treatment.slug}`}
 					>
 						<Image
-							src={treatment.data.image.src}
+							src={treatment.data.image}
 							alt="Pessoa Sorrindo"
-							width={treatment.data.image.width}
-							height={treatment.data.image.height}
 						/>
 						<div class="title-subtitle">
 							<span class="font-bold">

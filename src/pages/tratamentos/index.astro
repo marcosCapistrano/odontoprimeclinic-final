@@ -17,20 +17,30 @@ const categories = await getCategories();
     {
         Object.keys(categories).map((category) => {
             return (
-                <section>
-                    <h2>{categories[category].title}</h2>
-                    <div class="grid grid-cols-4 treatment-grid">
-                        {categories[category].treatments.map((treatment) => (
-                            <a class="card card-btn flex flex-col" href={`/tratamentos/${category}/${treatment.slug}`}>
-                                <Image src={treatment.image} alt="Pessoa Sorrindo" />
-                                <div class="title-subtitle">
-                                    <span class="font-bold">{treatment.title}</span>
-                                    <p>
-                                        {treatment.description}
-                                    </p>
-                                </div>
-                            </a>
-                        ))}
+                <section class="bg-primary">
+                    <div class="container">
+                        <h2>{categories[category].title}</h2>
+                        <div class="grid grid-cols-4 treatment-grid">
+                            {categories[category].treatments.map(
+                                (treatment) => (
+                                    <a
+                                        class="card card-btn flex flex-col"
+                                        href={`/tratamentos/${category}/${treatment.slug}`}
+                                    >
+                                        <Image
+                                            src={treatment.image}
+                                            alt="Pessoa Sorrindo"
+                                        />
+                                        <div class="title-subtitle">
+                                            <span class="font-bold">
+                                                {treatment.title}
+                                            </span>
+                                            <p>{treatment.description}</p>
+                                        </div>
+                                    </a>
+                                ),
+                            )}
+                        </div>
                     </div>
                 </section>
             );

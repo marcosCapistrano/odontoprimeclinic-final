@@ -1,8 +1,12 @@
-#treatment-layout .layout-header {
+#treatment-layout .header {
     aspect-ratio: 16/4;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+#treatment-layout .header-text {
+    padding-bottom: 1em;
 }
 
 #treatment-layout .title-subtitle {

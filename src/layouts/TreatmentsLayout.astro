@@ -11,12 +11,12 @@ const { title, headerTitle, headerDescription } = Astro.props;
 <BaseLayout title={title}>
 	<div id="treatment-layout">
 		<div
-			class="layout-header"
+			class="header"
 			style={`background-image: url(${exteriorImg.src})`}
 		>
 		</div>
 
-		<div class="bg-contrast">
+		<div class="bg-contrast header-text">
 			<div class="container">
 				<div class="title-subtitle">
 					<h1 class="fs-700">{headerTitle}</h1>
@@ -25,8 +25,6 @@ const { title, headerTitle, headerDescription } = Astro.props;
 			</div>
 		</div>
 
-		<div class="container">
 			<slot />
-		</div>
 	</div>
 </BaseLayout>

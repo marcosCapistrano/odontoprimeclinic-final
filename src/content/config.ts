@@ -6,7 +6,7 @@ const treatmentsCollection = defineCollection({
     schema: ({image}) => z.object({
         title: z.string(),
         image: image().refine((img) => img.width >= 200, {
-            message: "Cover image must be at least 1080 pixels wide!",
+            message: "Cover image must be at least 200 pixels wide!",
         }),
         category: z.string(),
         categoryDescription: z.string(),
@@ -16,5 +16,5 @@ const treatmentsCollection = defineCollection({
 });
 // Export a single `collections` object to register your collection(s)
 export const collections = {
-    treatments: treatmentsCollection,
+    'treatments': treatmentsCollection,
 };

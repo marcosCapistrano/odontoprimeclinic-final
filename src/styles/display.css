@@ -20,8 +20,13 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
+.grid-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
 .grid-cols-2 > *,
-.grid-cols-4 > * {
+.grid-cols-4 > *,
+.grid-cols-6 > * {
     grid-column: span 1;
 }
 
@@ -32,5 +37,9 @@
 
     .grid-cols-4 {
         grid-template-columns: 1fr;
+    }
+
+    .grid-cols-6 {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

@@ -1,0 +1,162 @@
+---
+title: "Botox"
+image: "./images/hero.png"
+category: "Estética"
+categoryDescription: "Conheça os tratamentos da área estética"
+description: "Conheça os benefícios do Botox na odontologia, desde a melhoria estética ao redor da boca até o tratamento de condições funcionais como bruxismo e DTM, promovendo um sorriso mais saudável e jovem."
+featured: true
+
+
+---
+
+import { Image } from 'astro:assets'
+import botox from './images/botox.jpg'
+
+	<section class="bg-primary">
+		<div class="container grid grid-cols-2">
+			<div class="flex flex-col">
+				<div class="title-subtitle">
+					<div>
+						<span class="font-accent">Sobre</span>
+						<h2 class="font-bold fs-600">Vantagens do Botox</h2>
+					</div>
+					<p>
+						O Botox oferece uma série de vantagens que podem melhorar sua aparência e autoestima. Aqui estão alguns dos principais benefícios:
+					</p>
+				</div>
+
+				<ul class="grid grid-cols-2">
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="font-bold">Reduçao de Linhas de Expressão e Rugas</span>
+							<p>
+								O Botox é altamente eficaz na redução de linhas de expressão e rugas, especialmente na testa, entre as sobrancelhas e ao redor dos olhos.
+							</p>
+						</div>
+					</li>
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="font-bold">Prevenção de Rugas Futuras</span>
+							<p>
+								Além de suavizar rugas existentes, o Botox ajuda a prevenir a formação de novas linhas ao relaxar os músculos faciais.
+							</p>
+						</div>
+					</li>
+
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="font-bold">Procedimento Não Cirúrgico</span>
+							<p>
+								O tratamento é não cirúrgico, envolvendo apenas pequenas injeções, o que significa menos dor e tempo de recuperação.
+							</p>
+						</div>
+					</li>
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="font-bold">Resultados Naturais</span>
+							<p>
+								Quando administrado por um profissional qualificado, o Botox proporciona resultados naturais, preservando a expressividade do rosto.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="grid-image" style={`background-image: url(${botox.src}); background-position:center; background-size: cover; min-height:300px;`}>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-primary">
+		<div class="container grid grid-cols-2">
+			<div class="flex flex-col">
+				<div class="title-subtitle">
+					<div>
+						<span class="font-accent">Sobre</span>
+						<h2 class="font-bold fs-600">Como é o Procedimento</h2>
+					</div>
+					<p>
+					Este procedimento não cirúrgico é rápido, seguro e altamente eficaz. Com o Botox, você pode obter uma aparência rejuvenescida sem necessidade de cortes ou tempo de recuperação, com resultados naturais e duradouros.
+					</p>
+				</div>
+
+				{/* <video src={video} alt="video" controls/> */}
+			</div>
+			<div class="flex flex-col">
+				<div class="card">
+					<h3>Contra Indicações</h3>
+					<ul>
+        <li>Alergia a qualquer componente do botox.</li>
+        <li>Gravidez ou amamentação.</li>
+        <li>Doenças neuromusculares (por exemplo, miastenia gravis).</li>
+        <li>Uso de medicamentos anticoagulantes.</li>
+        <li>Infecções na área de tratamento.</li>
+    </ul>
+				</div>
+
+				<div class="card">
+					<h3>Recomendações</h3>
+					<ul>
+        <li>Consulte um médico especializado em procedimentos estéticos.</li>
+        <li>Informe sobre qualquer condição médica pré-existente.</li>
+        <li>Siga as instruções pré e pós-tratamento do médico.</li>
+        <li>Evite esforços físicos intensos após a aplicação.</li>
+        <li>Agende sessões de acompanhamento conforme recomendado.</li>
+    </ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-primary">
+		<div class="container flex flex-col">
+				<div class="title-subtitle">
+					<div>
+						<span class="font-accent">Sobre</span>
+						<h2 class="font-bold fs-600">Resultados de Nossos Pacientes</h2>
+					</div>
+					<p>
+					Estes são alguns resultados de otomodelação realizados na Clínica Dermakey em Porto Alegre. Todas as fotos foram realizadas na mesma data do procedimento, demostrando o resultado imediato da otomodelação
+					</p>
+				</div>
+
+			<div class="grid grid-cols-4">
+				<div class="card">
+					<h5>Contra Indicações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-contrast">
+		<div class="container flex flex-col">
+			<div class="title-subtitle">
+				<h2 class="font-bold fs-600">Faça uma Avaliação Gratuita</h2>
+				<p>Nosso grande diferencial no mercado é oferecer planos de tratamento personalizados com valores justos.</p>
+			</div>
+
+
+			<a href="" class="btn btn-featured">Avaliação Gratuita</a>
+		</div>
+	</section>
