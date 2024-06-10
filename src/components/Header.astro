@@ -10,7 +10,7 @@ import logo from "../assets/logo.svg";
 const categories = await getCategories();
 ---
 
-<header class="bg-primary">
+<header class="bg-contrast">
     <div class="header container flex">
         <div class="logo flex">
             <Image
@@ -24,12 +24,12 @@ const categories = await getCategories();
 
         <button class="nav-toggle" aria-controls="navigation"></button>
 
-        <nav data-visible="false" class="bg-primary">
+        <nav data-visible="false" class="bg-contrast">
             <ul class="navigation flex">
                 <li><a href="/" class="btn">HOME</a></li>
                 <li>
                     <a href="/tratamentos" class="btn menu">TRATAMENTOS</a>
-                    <ul class="submenu bg-primary">
+                    <ul class="submenu bg-contrast">
                         {
                             Object.keys(categories).map((category) => (
                                 <li>
