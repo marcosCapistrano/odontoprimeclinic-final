@@ -46,17 +46,51 @@ a {
     --bg-secondary: #060d1a;
     --bg-contrast: #0b1a32;
     --bg-accent: #b88a20;
+    --bg-black: #000000;
 
     --color-primary: #FFFFFF;
     --color-secondary: #FFFFFF;
     --color-contrast: #FFFFFF;
     --color-accent: #FFFFFF;
+    --color-black: #ffffff;
 
     font-family: 'Montserrat';
 }
 
+.text-center {
+    text-align: center;
+}
+
+.max-w-32 {
+    max-width: 32ch;
+}
+
+.max-w-64 {
+    max-width: 64ch;
+}
+
+.margin-x-auto {
+    margin-inline: auto;
+}
+
+.gap-2 {
+    gap: 1rem;
+}
+
+.gap-4 {
+    gap: 2rem;
+}
+
+.gap-8 {
+    gap: 4rem;
+}
+
 .font-bold {
     font-weight: 700;
+}
+
+.font-light {
+    font-weight: 200;
 }
 
 .font-accent {
@@ -105,6 +139,11 @@ section {
 .bg-contrast {
     background-color: var(--bg-contrast);
     color: var(--color-contrast);
+}
+
+.bg-dark {
+    background-color: var(--bg-black);
+    color: var(--color-black);
 }
 
 

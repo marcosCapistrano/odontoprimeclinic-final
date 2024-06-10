@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 import heroImage from "../assets/images/hero.png";
+import sparkleIcon from "../assets/icons/sparkle.svg";
 
 import { getCollection } from "astro:content";
 import { convertToSlug } from "../utils/treatments";
@@ -158,7 +159,57 @@ const featuredTreatments = treatmeants.filter(
 					</a>
 				))
 			}
+		</div>
+	</section>
 
+	<section id="features" class="bg-contrast">
+		<div class="container flex flex-col gap-8 text-center">
+			<div class="title-subtitle">
+				<div>
+					<span class="font-light">Uma nova Experiência</span>
+					<h2 class="font-bold fs-600">Cliente Odonto Prime</h2>
+				</div>
+				<p class="max-w-64 margin-x-auto font-light">
+					Oferecemos uma nova experiência em estética avançada para
+					região de Porto Alegre, buscando sempre o melhor resultado
+					para atender as necessidades dos nossos clientes.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-3 gap-4">
+				<div class="flex flex-col margin-x-auto">
+					<Image src={sparkleIcon} alt="" class="margin-x-auto" />
+					<div class="title-subtitle">
+						<h3 class="font-bold">Melhor Atendimento</h3>
+						<p class="max-w-32">
+							Oferecemos a melhor experiência de atendimento de
+							Porto Alegre
+						</p>
+					</div>
+				</div>
+
+				<div class="flex flex-col margin-x-auto">
+					<Image src={sparkleIcon} alt="" class="margin-x-auto" />
+					<div class="title-subtitle">
+						<h3 class="font-bold">Melhor Atendimento</h3>
+						<p class="max-w-32">
+							Oferecemos a melhor experiência de atendimento de
+							Porto Alegre
+						</p>
+					</div>
+				</div>
+
+				<div class="flex flex-col margin-x-auto">
+					<Image src={sparkleIcon} alt="" class="margin-x-auto" />
+					<div class="title-subtitle">
+						<h3 class="font-bold">Melhor Atendimento</h3>
+						<p class="max-w-32">
+							Oferecemos a melhor experiência de atendimento de
+							Porto Alegre
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 </BaseLayout>
