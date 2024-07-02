@@ -14,3 +14,13 @@
         grid-column: span 1;
     }
 }
+
+#team .member-tag {
+    text-transform: uppercase;
+    background-color: #84FF98;
+    color: #004C03;
+    border-radius: 1em;
+    padding: .15em .5em;
+    margin-top: .75em;
+    font-size: .8em;
+}

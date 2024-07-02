@@ -13,6 +13,8 @@ const treatmeants = await getCollection("treatments");
 const featuredTreatments = treatmeants.filter(
 	(treatment) => treatment.data.featured === true,
 );
+
+const members = await getCollection("members");
 ---
 
 <BaseLayout>
@@ -58,17 +60,22 @@ const featuredTreatments = treatmeants.filter(
 				<ul class="grid grid-cols-2">
 					<li class="card">
 						<div class="title-subtitle">
-							<span class="font-bold">Atendimento Humanizado</span>
+							<span class="font-bold">Atendimento Humanizado</span
+							>
 							<p class="font-light">
-								A Odonto Prime prioriza o conforto dos pacientes com um atendimento acolhedor e personalizado.
+								A Odonto Prime prioriza o conforto dos pacientes
+								com um atendimento acolhedor e personalizado.
 							</p>
 						</div>
 					</li>
 					<li class="card">
 						<div class="title-subtitle">
-							<span class="font-bold">Profissionais Qualificados</span>
+							<span class="font-bold"
+								>Profissionais Qualificados</span
+							>
 							<p>
-								Contamos com profissionais experientes e atualizados, garantindo tratamentos eficazes.
+								Contamos com profissionais experientes e
+								atualizados, garantindo tratamentos eficazes.
 							</p>
 						</div>
 					</li>
@@ -77,7 +84,8 @@ const featuredTreatments = treatmeants.filter(
 						<div class="title-subtitle">
 							<span class="font-bold">Tecnologia Avançada</span>
 							<p>
-								Usamos tecnologia de ponta para oferecer tratamentos rápidos e confortáveis.
+								Usamos tecnologia de ponta para oferecer
+								tratamentos rápidos e confortáveis.
 							</p>
 						</div>
 					</li>
@@ -85,7 +93,8 @@ const featuredTreatments = treatmeants.filter(
 						<div class="title-subtitle">
 							<span class="font-bold">Para todas as Idades</span>
 							<p>
-								Atendemos todas as idades, adaptando os cuidados para crianças, adultos e idosos.
+								Atendemos todas as idades, adaptando os cuidados
+								para crianças, adultos e idosos.
 							</p>
 						</div>
 					</li>
@@ -187,6 +196,57 @@ const featuredTreatments = treatmeants.filter(
 						</p>
 					</div>
 				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="team" class="bg-primary">
+		<div class="container flex flex-col gap-8">
+			<div class="title-subtitle">
+				<div>
+					<span class="font-accent">Sobre</span>
+					<h2 class="font-bold fs-600">A Equipe</h2>
+				</div>
+			</div>
+
+			<div class="grid grid-cols-4">
+				{
+					members.map((member) => (
+						<div class="card flex flex-col">
+							<Image
+								src={member.data.image}
+								alt="Pessoa Sorrindo"
+							/>
+							<div>
+								<span class="font-bold">
+									{member.data.name}
+								</span>
+								<div class="flex">
+									{member.data.tags.map((tag) => (
+										<span class="member-tag">{tag}</span>
+									))}
+								</div>
+							</div>
+
+							<p>{member.data.description}</p>
+
+							<div>
+								<span class="font-bold">
+									Especialidades
+								</span>
+								<div class="flex">
+									{member.data.specialties.map(specialty => (
+										<span class="member-tag">{specialty}</span>
+									))}
+								</div>
+							</div>
+
+							<div class="flex space-between">
+								<span class="font-bold uppercase">CRO {member.data.cro}</span>
+							</div>
+						</div>
+					))
+				}
 			</div>
 		</div>
 	</section>

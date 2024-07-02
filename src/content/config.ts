@@ -14,7 +14,21 @@ const treatmentsCollection = defineCollection({
         featured: z.boolean(),
     })
 });
+
+const membersCollection = defineCollection({
+    type: "data",
+    schema: ({image}) => z.object({
+        image: image(),
+        name: z.string(),
+        tags: z.array(z.string()),
+        description: z.string(),
+        specialties: z.array(z.string()),
+        cro: z.string(),
+        instagram: z.string(),
+    })
+})
 // Export a single `collections` object to register your collection(s)
 export const collections = {
     'treatments': treatmentsCollection,
+    'members': membersCollection,
 };
