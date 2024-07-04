@@ -8,6 +8,7 @@ import sparkleIcon from "../assets/icons/sparkle.svg";
 
 import { getCollection } from "astro:content";
 import { convertToSlug } from "../utils/treatments";
+import Carousel from '../components/Carousel.astro';
 
 const treatmeants = await getCollection("treatments");
 const featuredTreatments = treatmeants.filter(
@@ -100,8 +101,8 @@ const members = await getCollection("members");
 					</li>
 				</ul>
 			</div>
-			<div class="grid-image">
-				<Image src={heroImage} alt="Pessoa Sorrindo" />
+			<div class="grid-image" style="z-index: 1">
+				<Carousel/>
 			</div>
 		</div>
 	</section>

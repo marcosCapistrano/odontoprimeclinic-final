@@ -5,14 +5,14 @@ import BaseLayout from "./BaseLayout.astro";
 import { Image } from "astro:assets";
 import exteriorImg from "../assets/images/hero.png";
 
-const { title, headerTitle, headerDescription } = Astro.props;
+const { title, headerTitle, headerDescription, headerImgSrc } = Astro.props;
 ---
 
 <BaseLayout title={title}>
 	<div id="treatment-layout">
 		<div
 			class="header"
-			style={`background-image: url(${exteriorImg.src}); background-attachment: fixed; background-size: cover;`}
+			style={`background-image: url(${headerImgSrc}); background-attachment: fixed; background-size: cover;`}
 		>
 		</div>
 

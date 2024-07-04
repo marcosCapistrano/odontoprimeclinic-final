@@ -15,12 +15,15 @@ const categories = await getCategories(category);
 
 const headerTitle = categories[category].title;
 const headerDescription = categories[category].description;
+
+import headerImg from '../../../assets/images/headers/bg1.jpg';
 ---
 
 <TreatmentsLayout
     title="Tratamentos - OdontoPrimeClinic"
     headerTitle={headerTitle}
     headerDescription={headerDescription}
+    headerImgSrc={headerImg.src}
 >
     {
         Object.keys(categories).map((category) => {

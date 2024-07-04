@@ -1,0 +1,107 @@
+---
+import "../styles/components/carousel.css";
+import { Image } from "astro:assets";
+import one from "../assets/images/clinic/01.jpeg";
+import two from "../assets/images/clinic/02.jpeg";
+import three from "../assets/images/clinic/03.jpeg";
+import four from "../assets/images/clinic/04.jpeg";
+import five from "../assets/images/clinic/05.jpeg";
+import six from "../assets/images/clinic/06.jpeg";
+import seven from "../assets/images/clinic/07.jpeg";
+import eight from "../assets/images/clinic/08.jpeg";
+import nine from "../assets/images/clinic/09.jpeg";
+import ten from "../assets/images/clinic/10.jpeg";
+import eleven from "../assets/images/clinic/11.jpeg";
+
+const images = [
+    one,
+    two,
+    three,
+    four,
+    five,
+    six,
+    seven,
+    eight,
+    nine,
+    ten,
+    eleven,
+];
+---
+
+<div class="carousel">
+    {
+        images.map((image) => (
+            <div class="carousel__image fade">
+                <Image src={image} alt="clinica" height={500} loading="eager" />
+            </div>
+        ))
+    }
+
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+</div>
+
+<div style="text-align:center; margin-top:1rem;">
+    {
+        images.map((image, i) => (
+            <span class="dot" onclick={`currentSlide(${i})`} />
+        ))
+    }
+</div>
+
+<script is:inline>
+    const prev = document.querySelector(".prev");
+    prev?.addEventListener("click", () => plusSlidesManual(-1));
+    const next = document.querySelector(".next");
+    next?.addEventListener("click", () => plusSlidesManual(1));
+
+
+    let slideIndex = 0;
+    showSlides(slideIndex);
+
+    let imageInterval = setInterval(() => {
+        plusSlides(1)
+    }, 2000)
+
+    // Next/previous controls
+    function plusSlides(n) {
+        slideIndex += n
+        showSlides(slideIndex);
+    }
+
+    function plusSlidesManual(n) {
+        slideIndex += n
+        showSlides(slideIndex);
+        if(imageInterval) {
+            clearInterval(imageInterval)
+        }
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        slideIndex = n
+        showSlides(slideIndex);
+
+        clearInterval(imageInterval)
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("carousel__image");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length-1) {
+            slideIndex = 0;
+        }
+        if (n < 0) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex].style.display = "block";
+        dots[slideIndex].className += " active";
+    }
+</script>

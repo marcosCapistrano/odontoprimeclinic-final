@@ -15,6 +15,10 @@
     }
 }
 
+#team img {
+    aspect-ratio: 3/3;
+}
+
 #team .member-tag {
     text-transform: uppercase;
     background-color: #84FF98;
