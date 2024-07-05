@@ -6,49 +6,165 @@ categoryDescription: "Conheça os tratamentos da área estética"
 description: "Procedimento que clareia os dentes."
 featured: true
 ---
-# Clareamento e Facetas Dentárias
 
-## Clareamento Dental
+import { Image } from 'astro:assets'
+import botox from './images/botox.jpg'
 
-O clareamento dental é um dos procedimentos estéticos mais populares na odontologia. Ele tem como objetivo remover manchas e clarear a coloração dos dentes, proporcionando um sorriso mais brilhante e atraente.
+	<section class="bg-primary">
+		<div class="container grid grid-cols-2">
+			<div class="flex flex-col">
+				<div class="title-subtitle">
+					<div>
+						<span class="font-accent">Sobre</span>
+						<h2 class="font-bold fs-600">Vantagens do Clareamento</h2>
+					</div>
+					<p>
+						O clareamento dental melhora a aparência e aumenta a autoconfiança de forma rápida e não invasiva, enquanto as facetas corrigem imperfeições e aprimoram a estética do sorriso com uma solução duradoura e protetora.
+					</p>
+				</div>
 
-### Tipos de Clareamento Dental
+				<ul class="grid grid-cols-2">
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="font-bold">Melhora na Aparência</span>
+							<p>
+                            Ambos os procedimentos resultam em dentes mais estéticos e um sorriso mais atraente.
+							</p>
+						</div>
+					</li>
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="font-bold">Procedimento Rápido e Não Invasivo</span>
+							<p>
+                            O clareamento dental oferece resultados rápidos sem necessidade de intervenções complexas.
+							</p>
+						</div>
+					</li>
 
-- **Clareamento no Consultório:** Realizado pelo dentista usando agentes clareadores mais potentes e, às vezes, luzes especiais ou lasers para intensificar o processo. Geralmente, leva cerca de uma hora.
-- **Clareamento Caseiro Supervisionado:** Inclui bandejas feitas sob medida que você preenche com um gel clareador e usa em casa, seguindo as instruções do seu dentista.
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="font-bold">Correção de Imperfeições e Durabilidade</span>
+							<p>
+                            As facetas corrigem descolorações, tamanhos e formas dos dentes, proporcionando uma solução duradoura e protetora.
+							</p>
+						</div>
+					</li>
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="font-bold">Aumento da Autoconfiança</span>
+							<p>
+                            Sorrisos mais brancos e alinhados podem aumentar significativamente a autoconfiança e a autoestima.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="grid-image" style={`background-image: url(${botox.src}); background-position:center; background-size: cover; min-height:300px;`}>
+			</div>
+		</div>
+	</section>
 
-### Benefícios do Clareamento Dental
+	<section class="bg-primary">
+		<div class="container grid grid-cols-2">
+			<div class="flex flex-col">
+				<div class="title-subtitle">
+					<div>
+						<span class="font-accent">Sobre</span>
+						<h2 class="font-bold fs-600">Como é o Procedimento</h2>
+					</div>
 
-- **Melhora Estética:** Deixa os dentes visivelmente mais brancos em pouco tempo.
-- **Autoestima:** Aumenta a confiança ao sorrir.
-- **Segurança:** Técnicas e produtos seguros que minimizam a sensibilidade dentária e protegem o esmalte.
+                    <h3>Clareamento</h3>
+					<p>
+                    O dentista avalia a saúde bucal, limpa os dentes, protege as gengivas e aplica um gel clareador. Em alguns casos, uma luz especial ativa o gel. Após um tempo de espera, o gel é removido, e o processo pode ser repetido até alcançar a tonalidade desejada.
+					</p>
 
-## Facetas Dentárias
+                    <h3>Facetas</h3>
+					<p>
+                    O dentista avalia os dentes, remove uma pequena quantidade de esmalte e faz moldagens para criar facetas personalizadas. Facetas temporárias podem ser usadas enquanto as permanentes são confeccionadas. As facetas definitivas são ajustadas, cimentadas nos dentes, e a mordida é verificada e ajustada.
+					</p>
+				</div>
 
-Facetas são lâminas finas de porcelana ou resina que são coladas na frente dos dentes. Elas são usadas para corrigir uma variedade de imperfeições dentárias, como dentes manchados, desalinhados, desgastados, irregulares ou com espaços excessivos entre eles.
+				{/* <video src={video} alt="video" controls/> */}
+			</div>
+			<div class="flex flex-col">
+				<div class="card">
+					<h3>Contra Indicações</h3>
+                    <ul>
+  <li>Cáries ou Doenças Gengivais</li>
+  <li>Dentes Hipersensíveis</li>
+  <li>Gravidez e Amamentação</li>
+</ul>
+<ul>
+  <li>Má Saúde Bucal</li>
+  <li>Mordida Severamente Desalinhada</li>
+  <li>Bruxismo</li>
+</ul>
+				</div>
 
-### Processo de Aplicação das Facetas
+				<div class="card">
+					<h3>Recomendações</h3>
+					<ul>
+  <li>Consulte um dentista para avaliar a saúde bucal antes de iniciar qualquer procedimento.</li>
+  <li>Informe o dentista sobre qualquer sensibilidade dentária pré-existente.</li>
+  <li>Siga as orientações do dentista para cuidados pós-tratamento, como evitar alimentos que possam manchar os dentes.</li>
+  <li>Realize visitas regulares ao dentista para manutenção da saúde bucal.</li>
+</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 
-1. **Consulta Inicial:** Discussão sobre as expectativas e planejamento do tratamento.
-2. **Preparação dos Dentes:** Remoção de uma pequena quantidade do esmalte dentário para acomodar a faceta.
-3. **Moldagem:** Impressão dos dentes preparados para criar as facetas personalizadas.
-4. **Instalação:** Aplicação das facetas nos dentes, seguida de ajustes para garantir um encaixe perfeito.
+	{/* <section class="bg-primary">
+        <div class="container flex flex-col">
+                <div class="title-subtitle">
+                    <div>
+                        <span class="font-accent">Sobre</span>
+                        <h2 class="font-bold fs-600">Resultados de Nossos Pacientes</h2>
+                    </div>
+                    <p>
+                    Estes são alguns resultados de otomodelação realizados na Clínica Dermakey em Porto Alegre. Todas as fotos foram realizadas na mesma data do procedimento, demostrando o resultado imediato da otomodelação
+                    </p>
+                </div>
 
-### Vantagens das Facetas
+            <div class="grid grid-cols-4">
+                <div class="card">
+                    <h5>Contra Indicações</h5>
+                </div>
+                <div class="card">
+                    <h5>Recomendações</h5>
+                </div>
+                <div class="card">
+                    <h5>Recomendações</h5>
+                </div>
+                <div class="card">
+                    <h5>Recomendações</h5>
+                </div>
+                <div class="card">
+                    <h5>Recomendações</h5>
+                </div>
+                <div class="card">
+                    <h5>Recomendações</h5>
+                </div>
+                <div class="card">
+                    <h5>Recomendações</h5>
+                </div>
 
-- **Aparência Natural:** As facetas são feitas para combinar com a cor e a forma dos dentes naturais.
-- **Durabilidade:** Com cuidados adequados, podem durar de 10 a 15 anos.
-- **Versatilidade:** Podem corrigir múltiplos problemas estéticos com um único tratamento.
-- **Manutenção Simples:** As facetas podem ser tratadas como seus próprios dentes, com rotinas normais de escovação e uso de fio dental.
+                <div class="card">
+                    <h5>Recomendações</h5>
+                </div>
+            </div>
+        </div>
+    </section> */}
 
-## Cuidados Após os Procedimentos
+	<section class="bg-contrast">
+		<div class="container flex flex-col">
+			<div class="title-subtitle">
+				<h2 class="font-bold fs-600">Faça uma Avaliação Gratuita</h2>
+				<p>Nosso grande diferencial no mercado é oferecer planos de tratamento personalizados com valores justos.</p>
+			</div>
 
-- **Evitar Alimentos Manchadores:** Café, vinho tinto, chá e tabaco podem manchar facetas e dentes clareados.
-- **Higiene Bucal:** Mantenha uma boa rotina de higiene para prolongar os resultados.
-- **Visitas Regulares ao Dentista:** Para check-ups e limpezas profissionais.
 
-## Conclusão
+			<a href="" class="btn btn-featured">Avaliação Gratuita</a>
+		</div>
+	</section>
 
-Tanto o clareamento quanto as facetas são excelentes opções para melhorar a estética do seu sorriso. Se você está considerando algum desses tratamentos, é importante discutir com seu dentista para escolher a opção que melhor atende às suas necessidades e expectativas.
-
-Para mais informações ou para marcar uma consulta, entre em contato conosco!
