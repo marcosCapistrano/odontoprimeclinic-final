@@ -22,7 +22,7 @@ const membersCollection = defineCollection({
         name: z.string(),
         tags: z.array(z.string()),
         description: z.string(),
-        specialties: z.array(z.string()),
+        specialties: z.array(z.string().nullable()),
         cro: z.string(),
         instagram: z.string(),
     })

@@ -1,0 +1,9 @@
+{
+    "image": "./images/aline.jpeg",
+    "name": "Aline Beraldo",
+    "tags": ["Esteticista"],
+    "description": "Lorem ipsum",
+    "specialties": ["Estética Facial", "Estética Corporal", "HOF"],
+    "cro": "",
+    "instagram": "@beraldo"
+}
