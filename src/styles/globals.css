@@ -126,6 +126,7 @@ section {
     margin-inline: auto;
 }
 
+
 .bg-primary {
     background-color: var(--bg-primary);
     color: var(--color-primary);
