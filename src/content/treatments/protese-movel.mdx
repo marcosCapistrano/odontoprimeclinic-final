@@ -1,0 +1,164 @@
+---
+title: "Prótese Móvel"
+image: "./images/protese-fixa.jpg"
+category: "Estética"
+categoryDescription: "Conheça os tratamentos da área estética"
+description: "Dispositivos dentários removíveis usados para substituir dentes perdidos, podendo ser retirados e recolocados pelo paciente."
+featured: true
+---
+
+import { Image } from 'astro:assets'
+import protese from './images/protese-fixa.jpg'
+
+	<section class="bg-primary">
+		<div class="container grid grid-cols-2">
+			<div class="flex flex-col">
+				<div class="title-subtitle">
+					<div>
+						<span class="font-accent">Sobre</span>
+						<h2 class="font-bold fs-600">Vantagens da Prótese Fixa</h2>
+					</div>
+					<p>
+						A Prótese Móvel oferece uma série de vantagens que podem melhorar sua aparência e autoestima. Aqui estão alguns dos principais benefícios:
+					</p>
+				</div>
+
+				<ul class="grid grid-cols-2">
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="font-bold">Removível</span>
+							<p>
+							Pode ser retirada para limpeza e manutenção, oferecendo flexibilidade.
+							</p>
+						</div>
+					</li>
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="font-bold">Menor Custo</span>
+							<p>
+							Geralmente, são mais econômicas em comparação com próteses fixas.
+							</p>
+						</div>
+					</li>
+
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="font-bold">Facilidade de Ajuste</span>
+							<p>
+							Permitem ajustes mais simples e rápidos em caso de alterações na boca.
+							</p>
+						</div>
+					</li>
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="font-bold">Restauram a Função</span>
+							<p>
+							Ajudam a restaurar a capacidade de mastigar e falar de forma mais eficiente.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="grid-image" style={`background-image: url(${protese.src}); background-position:center; background-size: cover; min-height:300px;`}>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-primary">
+		<div class="container grid grid-cols-2">
+			<div class="flex flex-col">
+				<div class="title-subtitle">
+					<div>
+						<span class="font-accent">Sobre</span>
+						<h2 class="font-bold fs-600">Como é o Procedimento</h2>
+					</div>
+					<p>
+					O procedimento para colocar próteses fixas geralmente envolve os seguintes passos:
+					</p>
+					<ul class="flex flex-col">
+					<li><strong>Avaliação e Planejamento:</strong> O dentista realiza uma avaliação para planejar o tratamento e determinar a prótese adequada.</li>
+        <li><strong>Impressão:</strong> São feitas impressões dentárias para criar moldes precisos da boca.</li>
+        <li><strong>Confecção da Próteses:</strong> A prótese é confeccionada no laboratório com base nos moldes obtidos.</li>
+        <li><strong>Ajuste e Entrega:</strong> O dentista ajusta a prótese para garantir um bom encaixe e ensina o paciente sobre o uso e cuidados.</li>
+    </ul>
+				</div>
+
+				{/* <video src={video} alt="video" controls/> */}
+			</div>
+			<div class="flex flex-col">
+				<div class="card">
+					<h3>Contra Indicações</h3>
+					<ul class="flex flex-col">
+					 <li><strong>Saúde Bucal Comprometida:</strong> Dentes ou gengivas com problemas graves podem não sustentar adequadamente a prótese.</li>
+        <li><strong>Deficiência Óssea:</strong> A falta de estrutura óssea adequada pode afetar o suporte e a estabilidade da prótese.</li>
+        <li><strong>Alterações na Boca:</strong> Mudanças frequentes na estrutura bucal podem exigir ajustes constantes na prótese.</li>
+        <li><strong>Condições de Saúde Específicas:</strong> Algumas condições médicas podem afetar a adaptação e conforto da prótese.</li>
+    </ul>
+				</div>
+
+				<div class="card">
+					<h3>Recomendações</h3>
+					<ul class="flex flex-col">
+					<li><strong>Higiene Regular:</strong> Limpe a prótese diariamente e faça a higiene bucal adequada para evitar problemas.</li>
+        <li><strong>Ajuste e Conforto:</strong> Consulte regularmente o dentista para ajustar a prótese e garantir conforto.</li>
+        <li><strong>Cuidados ao Remover:</strong> Retire e coloque a prótese com cuidado para evitar danos.</li>
+        <li><strong>Manutenção da Saúde Bucal:</strong> Mantenha a saúde geral da boca com consultas regulares e cuidados apropriados.</li>
+    </ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{/* <section class="bg-primary">
+		<div class="container flex flex-col">
+				<div class="title-subtitle">
+					<div>
+						<span class="font-accent">Sobre</span>
+						<h2 class="font-bold fs-600">Resultados de Nossos Pacientes</h2>
+					</div>
+					<p>
+					Estes são alguns resultados de otomodelação realizados na Clínica Dermakey em Porto Alegre. Todas as fotos foram realizadas na mesma data do procedimento, demostrando o resultado imediato da otomodelação
+					</p>
+				</div>
+
+			<div class="grid grid-cols-4">
+				<div class="card">
+					<h5>Contra Indicações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+			</div>
+		</div>
+	</section> */}
+
+	<section class="bg-contrast">
+		<div class="container flex flex-col">
+			<div class="title-subtitle">
+				<h2 class="font-bold fs-600">Faça uma Avaliação Gratuita</h2>
+				<p>Nosso grande diferencial no mercado é oferecer planos de tratamento personalizados com valores justos.</p>
+			</div>
+
+
+			<a href="" class="btn btn-featured">Avaliação Gratuita</a>
+		</div>
+	</section>

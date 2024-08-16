@@ -1,0 +1,165 @@
+---
+title: "Prótese Fixa"
+image: "./images/protese-fixa.jpg"
+category: "Estética"
+categoryDescription: "Conheça os tratamentos da área estética"
+description: "Dispositivos dentários permanentemente presos aos dentes ou implantes para substituir dentes perdidos."
+featured: true
+---
+
+import { Image } from 'astro:assets'
+import protese from './images/protese-fixa.jpg'
+
+	<section class="bg-primary">
+		<div class="container grid grid-cols-2">
+			<div class="flex flex-col">
+				<div class="title-subtitle">
+					<div>
+						<span class="font-accent">Sobre</span>
+						<h2 class="font-bold fs-600">Vantagens da Prótese Fixa</h2>
+					</div>
+					<p>
+						A Prótese Fixa oferece uma série de vantagens que podem melhorar sua aparência e autoestima. Aqui estão alguns dos principais benefícios:
+					</p>
+				</div>
+
+				<ul class="grid grid-cols-2">
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="font-bold">Estabilidade</span>
+							<p>
+							Permanecem fixas no lugar, proporcionando segurança e conforto ao falar e mastigar.
+							</p>
+						</div>
+					</li>
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="font-bold">Estética</span>
+							<p>
+							Melhora a aparência do sorriso, com resultados naturais e bem adaptados.
+							</p>
+						</div>
+					</li>
+
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="font-bold">Funcionalidade</span>
+							<p>
+							Restaura a capacidade de mastigar e falar corretamente.
+							</p>
+						</div>
+					</li>
+					<li class="card">
+						<div class="title-subtitle">
+							<span class="font-bold">Durabilidade</span>
+							<p>
+							São resistentes e duráveis, com uma longa vida útil quando bem cuidados.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="grid-image" style={`background-image: url(${protese.src}); background-position:center; background-size: cover; min-height:300px;`}>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-primary">
+		<div class="container grid grid-cols-2">
+			<div class="flex flex-col">
+				<div class="title-subtitle">
+					<div>
+						<span class="font-accent">Sobre</span>
+						<h2 class="font-bold fs-600">Como é o Procedimento</h2>
+					</div>
+					<p>
+					O procedimento para colocar próteses fixas geralmente envolve os seguintes passos:
+					</p>
+					<ul class="flex flex-col">
+        <li><strong>Avaliação e Planejamento:</strong> O dentista realiza uma avaliação completa, incluindo exames e radiografias, para planejar o tratamento e determinar a melhor solução para o caso.</li>
+        <li><strong>Preparação dos Dentes:</strong> Os dentes que vão receber a prótese são preparados, o que pode incluir o desgaste dos dentes naturais ou a colocação de implantes dentários. Se for uma ponte, os dentes adjacentes são reduzidos para acomodar a prótese.</li>
+        <li><strong>Impressão:</strong> O dentista faz impressões dentárias para criar moldes precisos da boca, que serão enviados ao laboratório para a confecção da prótese.</li>
+        <li><strong>Colocação da Próteses:</strong> Após a prótese ser fabricada, o dentista a coloca e ajusta para garantir um encaixe perfeito e conforto. Em alguns casos, uma prótese provisória pode ser colocada até a finalização da prótese definitiva.</li>
+        <li><strong>Ajustes e Cuidados Finais:</strong> O dentista realiza ajustes finais para assegurar a funcionalidade e estética adequadas e fornece instruções sobre cuidados e manutenção da prótese.</li>
+    </ul>
+				</div>
+
+				{/* <video src={video} alt="video" controls/> */}
+			</div>
+			<div class="flex flex-col">
+				<div class="card">
+					<h3>Contra Indicações</h3>
+					<ul class="flex flex-col">
+        <li><strong>Saúde Dental Insuficiente:</strong> Dentes ou gengivas com cáries não tratadas, doenças periodontais graves ou estruturas dentárias comprometidas podem não fornecer uma base estável para a prótese.</li>
+        <li><strong>Deficiência Óssea:</strong> No caso de próteses sobre implantes, a falta de osso suficiente para suportar os implantes pode ser um problema.</li>
+        <li><strong>Problemas de Mordida:</strong> Desalinhamentos graves na mordida podem complicar a colocação e funcionalidade da prótese.</li>
+        <li><strong>Condições Médicas Específicas:</strong> Algumas condições médicas ou tratamentos, como doenças autoimunes ou tratamentos de radiação, podem afetar a cicatrização e a aceitação da prótese.</li>
+    </ul>
+				</div>
+
+				<div class="card">
+					<h3>Recomendações</h3>
+					<ul class="flex flex-col">
+        <li><strong>Manutenção Regular:</strong> Realize consultas regulares ao dentista para verificar o ajuste da prótese e a saúde bucal geral.</li>
+        <li><strong>Higiene Oral:</strong> Mantenha uma boa higiene oral, escovando os dentes e usando fio dental regularmente para prevenir problemas dentários.</li>
+        <li><strong>Cuidados com a Alimentação:</strong> Evite alimentos duros ou pegajosos que possam danificar a prótese ou causar desconforto.</li>
+        <li><strong>Uso de Protético:</strong> Utilize a prótese conforme as orientações do dentista para garantir seu bom funcionamento e evitar complicações.</li>
+    </ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{/* <section class="bg-primary">
+		<div class="container flex flex-col">
+				<div class="title-subtitle">
+					<div>
+						<span class="font-accent">Sobre</span>
+						<h2 class="font-bold fs-600">Resultados de Nossos Pacientes</h2>
+					</div>
+					<p>
+					Estes são alguns resultados de otomodelação realizados na Clínica Dermakey em Porto Alegre. Todas as fotos foram realizadas na mesma data do procedimento, demostrando o resultado imediato da otomodelação
+					</p>
+				</div>
+
+			<div class="grid grid-cols-4">
+				<div class="card">
+					<h5>Contra Indicações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+
+				<div class="card">
+					<h5>Recomendações</h5>
+				</div>
+			</div>
+		</div>
+	</section> */}
+
+	<section class="bg-contrast">
+		<div class="container flex flex-col">
+			<div class="title-subtitle">
+				<h2 class="font-bold fs-600">Faça uma Avaliação Gratuita</h2>
+				<p>Nosso grande diferencial no mercado é oferecer planos de tratamento personalizados com valores justos.</p>
+			</div>
+
+
+			<a href="" class="btn btn-featured">Avaliação Gratuita</a>
+		</div>
+	</section>
