@@ -5,7 +5,7 @@ import { getCategories } from "../../utils/treatments";
 
 const headerTitle = "Tratamentos";
 const headerDescription = "Conheça os tratamentos oferecidos pela clínica";
-import headerImg from '../../assets/images/headers/bg1.jpg';
+import headerImg from '../../assets/images/headers/bg1.jpg'
 
 const categories = await getCategories();
 ---
@@ -14,7 +14,7 @@ const categories = await getCategories();
     title="Tratamentos - OdontoPrimeClinic"
     headerTitle={headerTitle}
     headerDescription={headerDescription}
-    headerImgSrc={headerImg.src}
+    headerImgSrc={headerImg}
 >
     {
         Object.keys(categories).map((category) => {
