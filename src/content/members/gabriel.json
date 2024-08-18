@@ -5,5 +5,6 @@
     "description": "Lorem ipsum",
     "specialties": ["próteses e implantes"],
     "cro": "MG-644643",
-    "instagram": "@beraldo"
+    "instagram": "@beraldo",
+    "order": 0
 }

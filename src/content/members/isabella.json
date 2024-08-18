@@ -5,5 +5,6 @@
     "description": "Lorem ipsum",
     "specialties": ["Ortodontia"],
     "cro": "",
-    "instagram": "@beraldo"
+    "instagram": "@beraldo",
+    "order": 2
 }

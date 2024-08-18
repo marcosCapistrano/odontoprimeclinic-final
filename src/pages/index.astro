@@ -8,7 +8,7 @@ import sparkleIcon from "../assets/icons/sparkle.svg";
 
 import { getCollection } from "astro:content";
 import { convertToSlug } from "../utils/treatments";
-import Carousel from '../components/Carousel.astro';
+import Carousel from "../components/Carousel.astro";
 
 const treatmeants = await getCollection("treatments");
 const featuredTreatments = treatmeants.filter(
@@ -102,7 +102,7 @@ const members = await getCollection("members");
 				</ul>
 			</div>
 			<div class="grid-image" style="z-index: 1">
-				<Carousel/>
+				<Carousel />
 			</div>
 		</div>
 	</section>
@@ -212,7 +212,7 @@ const members = await getCollection("members");
 
 			<div class="grid grid-cols-4">
 				{
-					members.map((member) => (
+					members.sort((member1, member2) => member1.data.order - member2.data.order ).map((member) => (
 						<div class="card flex flex-col">
 							<Image
 								src={member.data.image}
@@ -231,6 +231,7 @@ const members = await getCollection("members");
 
 							<p>{member.data.description}</p>
 
+							{/* 
 							<div>
 								<span class="font-bold">
 									Especialidades
@@ -245,6 +246,7 @@ const members = await getCollection("members");
 							<div class="flex space-between">
 								<span class="font-bold uppercase">CRO {member.data.cro}</span>
 							</div>
+*/}
 						</div>
 					))
 				}

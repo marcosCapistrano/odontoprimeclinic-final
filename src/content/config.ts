@@ -25,6 +25,7 @@ const membersCollection = defineCollection({
         specialties: z.array(z.string().nullable()),
         cro: z.string(),
         instagram: z.string(),
+        order: z.number(),
     })
 })
 // Export a single `collections` object to register your collection(s)
