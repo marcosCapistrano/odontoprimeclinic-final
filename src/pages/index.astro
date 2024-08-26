@@ -10,6 +10,10 @@ import { getCollection } from "astro:content";
 import { convertToSlug } from "../utils/treatments";
 import Carousel from "../components/Carousel.astro";
 
+import video1 from '../assets/videos/video1.mp4';
+import video2 from '../assets/videos/video2.mp4';
+import video3 from '../assets/videos/video3.mp4';
+
 const treatmeants = await getCollection("treatments");
 const featuredTreatments = treatmeants.filter(
 	(treatment) => treatment.data.featured === true,
@@ -164,27 +168,10 @@ const members = await getCollection("members");
 				</p>
 			</div>
 
-			<div class="grid grid-cols-3 gap-4">
-				<div class="flex flex-col margin-x-auto">
-					<Image src={sparkleIcon} alt="" class="margin-x-auto" />
-					<div class="title-subtitle">
-						<h3 class="font-bold">Melhor Atendimento</h3>
-					</div>
-				</div>
-
-				<div class="flex flex-col margin-x-auto">
-					<Image src={sparkleIcon} alt="" class="margin-x-auto" />
-					<div class="title-subtitle">
-						<h3 class="font-bold">Custos Acessíveis</h3>
-					</div>
-				</div>
-
-				<div class="flex flex-col margin-x-auto">
-					<Image src={sparkleIcon} alt="" class="margin-x-auto" />
-					<div class="title-subtitle">
-						<h3 class="font-bold">Resultados Mensuráveis</h3>
-					</div>
-				</div>
+			<div class="grid grid-cols-3 gap-4 videos">
+				<video class="flex" src={video1} controls></video>
+				<video src={video2} controls></video>
+				<video src={video3} controls></video>
 			</div>
 		</div>
 	</section>
